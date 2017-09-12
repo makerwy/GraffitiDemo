@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "WYDrawLineView.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    WYDrawLineView *touchdrawView = [[WYDrawLineView alloc] initWithFrame:self.view.frame];
+    
+    touchdrawView.drawLineColor = [UIColor blackColor];
+    touchdrawView.drawLineWidth = 2;
+    [self.view addSubview:touchdrawView];
 }
 
 

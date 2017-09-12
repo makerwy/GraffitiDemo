@@ -10,20 +10,27 @@
 #import "WYDrawLineInfo.h"
 
 @interface WYDrawLineView : UIView
-
 /**
  所有线段信息
  */
 @property (nonatomic, strong) NSMutableArray *allDrawLineInfo;
-
 /**
  线段颜色
  */
 @property (nonatomic, strong) UIColor *drawLineColor;
-
 /**
  线段宽度
  */
 @property (nonatomic, assign) float drawLineWidth;
+
+/**
+ 清空画板
+ */
+- (void)cleanAllDrawLine;
+
+/**
+ 撤销上一条线条
+ */
+- (void)cleanLastDrawLine;
 
 @end

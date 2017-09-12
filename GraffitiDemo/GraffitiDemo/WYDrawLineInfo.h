@@ -9,17 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface WYDrawLineInfo : NSObject
-
 /**
  线条所包含的所有点
  */
 @property (nonatomic, strong) NSMutableArray *drawLinePoints;
-
 /**
  线条颜色
  */
 @property (nonatomic, strong) UIColor *lineColor;
-
 /**
  线条宽度
  */
