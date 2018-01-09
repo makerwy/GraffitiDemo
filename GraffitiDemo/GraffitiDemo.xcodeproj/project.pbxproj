@@ -13,8 +13,8 @@
 		18BF29141F67BA3E00AB3369 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BF29121F67BA3E00AB3369 /* Main.storyboard */; };
 		18BF29161F67BA3E00AB3369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BF29151F67BA3E00AB3369 /* Assets.xcassets */; };
 		18BF29191F67BA3E00AB3369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BF29171F67BA3E00AB3369 /* LaunchScreen.storyboard */; };
-		18BF29221F67BA6D00AB3369 /* WYDrawLineInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF29211F67BA6D00AB3369 /* WYDrawLineInfo.m */; };
-		18BF29251F67BA8200AB3369 /* WYDrawLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF29241F67BA8200AB3369 /* WYDrawLineView.m */; };
+		18DE849420045D5A00BA6889 /* WYDrawLineInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DE849020045D5A00BA6889 /* WYDrawLineInfo.m */; };
+		18DE849520045D5A00BA6889 /* WYDrawLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DE849320045D5A00BA6889 /* WYDrawLineView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		18BF29151F67BA3E00AB3369 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18BF29181F67BA3E00AB3369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18BF291A1F67BA3E00AB3369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18BF29201F67BA6D00AB3369 /* WYDrawLineInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYDrawLineInfo.h; sourceTree = "<group>"; };
-		18BF29211F67BA6D00AB3369 /* WYDrawLineInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYDrawLineInfo.m; sourceTree = "<group>"; };
-		18BF29231F67BA8200AB3369 /* WYDrawLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYDrawLineView.h; sourceTree = "<group>"; };
-		18BF29241F67BA8200AB3369 /* WYDrawLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYDrawLineView.m; sourceTree = "<group>"; };
+		18DE849020045D5A00BA6889 /* WYDrawLineInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYDrawLineInfo.m; sourceTree = "<group>"; };
+		18DE849120045D5A00BA6889 /* WYDrawLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYDrawLineView.h; sourceTree = "<group>"; };
+		18DE849220045D5A00BA6889 /* WYDrawLineInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYDrawLineInfo.h; sourceTree = "<group>"; };
+		18DE849320045D5A00BA6889 /* WYDrawLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYDrawLineView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +64,11 @@
 		18BF29081F67BA3E00AB3369 /* GraffitiDemo */ = {
 			isa = PBXGroup;
 			children = (
+				18DE848F20045D2300BA6889 /* YYDrawLine */,
 				18BF290C1F67BA3E00AB3369 /* AppDelegate.h */,
 				18BF290D1F67BA3E00AB3369 /* AppDelegate.m */,
 				18BF290F1F67BA3E00AB3369 /* ViewController.h */,
 				18BF29101F67BA3E00AB3369 /* ViewController.m */,
-				18BF29231F67BA8200AB3369 /* WYDrawLineView.h */,
-				18BF29241F67BA8200AB3369 /* WYDrawLineView.m */,
-				18BF29201F67BA6D00AB3369 /* WYDrawLineInfo.h */,
-				18BF29211F67BA6D00AB3369 /* WYDrawLineInfo.m */,
 				18BF29121F67BA3E00AB3369 /* Main.storyboard */,
 				18BF29151F67BA3E00AB3369 /* Assets.xcassets */,
 				18BF29171F67BA3E00AB3369 /* LaunchScreen.storyboard */,
@@ -88,6 +85,17 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		18DE848F20045D2300BA6889 /* YYDrawLine */ = {
+			isa = PBXGroup;
+			children = (
+				18DE849220045D5A00BA6889 /* WYDrawLineInfo.h */,
+				18DE849020045D5A00BA6889 /* WYDrawLineInfo.m */,
+				18DE849120045D5A00BA6889 /* WYDrawLineView.h */,
+				18DE849320045D5A00BA6889 /* WYDrawLineView.m */,
+			);
+			path = YYDrawLine;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -163,8 +171,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				18BF29111F67BA3E00AB3369 /* ViewController.m in Sources */,
-				18BF29221F67BA6D00AB3369 /* WYDrawLineInfo.m in Sources */,
-				18BF29251F67BA8200AB3369 /* WYDrawLineView.m in Sources */,
+				18DE849420045D5A00BA6889 /* WYDrawLineInfo.m in Sources */,
+				18DE849520045D5A00BA6889 /* WYDrawLineView.m in Sources */,
 				18BF290E1F67BA3E00AB3369 /* AppDelegate.m in Sources */,
 				18BF290B1F67BA3E00AB3369 /* main.m in Sources */,
 			);
@@ -327,6 +335,7 @@
 				18BF291F1F67BA3E00AB3369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
